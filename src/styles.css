@@ -154,9 +154,9 @@ button:focus-visible{outline:3px solid #e96f61;outline-offset:3px}
 .access-visual figcaption {
   font-size: 13px;
   line-height: 1.5;
-  text-align: right;
+  text-align: center;
 }
-.hero-visual figcaption { left: auto; right: 0; }
+.hero-visual figcaption { left: 0; right: 0; }
 
 /* Header follows the current RevenueCat navigation and account actions. */
 .site-header{position:relative;z-index:30}
@@ -192,12 +192,11 @@ button:focus-visible{outline:3px solid #e96f61;outline-offset:3px}
 .closing-actions{align-items:center;gap:30px;flex-wrap:wrap}
 .closing-actions .button-link{color:#fff}
 .closing-actions .button-link:hover{color:#dedbff}
+/* Keep image descriptions and their links centered at every screen size. */
+main figure figcaption{text-align:center}
+.web-product-image figcaption,.insight-image figcaption{flex-direction:column;justify-content:center;align-items:center}
 @media(max-width:800px){
   .section-index{display:none}
-  main figure figcaption,
-  .hero-visual figcaption,.paywalls-visual figcaption,.access-visual figcaption{text-align:center}
-  .hero-visual figcaption{left:0;right:0}
-  .web-product-image figcaption,.insight-image figcaption{flex-direction:column;justify-content:center;align-items:center}
 }
 @media(max-width:600px){.closing-actions{gap:18px}}
 @media(max-width:390px){.closing-actions{align-items:flex-start;flex-direction:column}}
