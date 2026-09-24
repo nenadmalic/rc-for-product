@@ -187,3 +187,17 @@ button:focus-visible{outline:3px solid #e96f61;outline-offset:3px}
   .site-header .mobile-menu-actions .header-contact{color:#34344c}
   .site-header .mobile-menu-actions .header-signup{color:#fff}
 }
+
+/* Repeat the hero conversion choices on the closing section's dark surface. */
+.closing-actions{align-items:center;gap:30px;flex-wrap:wrap}
+.closing-actions .button-link{color:#fff}
+.closing-actions .button-link:hover{color:#dedbff}
+@media(max-width:800px){
+  .section-index{display:none}
+  main figure figcaption,
+  .hero-visual figcaption,.paywalls-visual figcaption,.access-visual figcaption{text-align:center}
+  .hero-visual figcaption{left:0;right:0}
+  .web-product-image figcaption,.insight-image figcaption{flex-direction:column;justify-content:center;align-items:center}
+}
+@media(max-width:600px){.closing-actions{gap:18px}}
+@media(max-width:390px){.closing-actions{align-items:flex-start;flex-direction:column}}
