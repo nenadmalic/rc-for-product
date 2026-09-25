@@ -3,3 +3,7 @@ dist/
 *.tsbuildinfo
 .vercel/
 .DS_Store
+
+# Working notes stay local; only the root README is published
+*.md
+!/README.md
